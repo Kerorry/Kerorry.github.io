@@ -1,10 +1,10 @@
 /* 侧边栏 */
 .sidebar {
-  width: 300px;
-  padding: 30px;
+  width: 290px;
+  padding: 20px;
   position: relative;
   height: fit-content;
-  left: 0;
+  left: 20px;
 }
 
 .profile { /* 个人资料 */
