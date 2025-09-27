@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #5a0eac;
-  --deep-blue-color: #1b4faa;
+  --primary-color: #6c28b5;
+  --deep-blue-color: #2353a5;
   --light-blue-color: #326fa3;
   --deep-green-color: #006c71;
 }
@@ -13,9 +13,10 @@
 }
 
 body { /* 页面主体 */
-  background: linear-gradient(45deg, var(--primary-color), var(--deep-blue-color), var(--light-blue-color), var(--deep-green-color));
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background-image: url('../assets/pic/bg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
@@ -26,16 +27,16 @@ body { /* 页面主体 */
   display: flex;
   max-width: calc(100% - 40px);
   margin: 0 auto;
-  gap: 30px;
+  gap: 30px; /* 内容间隔 */
 }
 
 .glass-ground {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px) brightness(110%);
-  -webkit-backdrop-filter: blur(12px) brightness(110%);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px) brightness(110%); /* 背景模糊 */
+  -webkit-backdrop-filter: blur(12px) brightness(110%); /* Safari */
+  border-radius: 16px; /* 阴影 */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* 边框 */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05); /* 阴影 */
   overflow: hidden;
   transition: all 0.4s ease;
   position: relative;
@@ -53,7 +54,7 @@ body { /* 页面主体 */
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 1;
-  pointer-events: none;
+  pointer-events: none; /* 鼠标穿透 */
 }
 
 .glass-ground:hover::before {
