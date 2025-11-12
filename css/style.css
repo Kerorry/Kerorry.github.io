@@ -13,7 +13,7 @@
 }
 
 body { /* 页面主体 */
-  background-image: url('../assets/pic/bg_1.jpg');
+  background-image: url('../assets/pic/Background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -120,12 +120,12 @@ body { /* 页面主体 */
   gap: 15px;
 }
 
-.post-meta span { /* 文章数据标签 */
+.post-meta span { /* 文章标签 */
   display: flex;
   align-items: center;
 }
 
-.post-meta i { /* 文章元数据图标 */
+.post-meta i { /* 文章图标 */
   margin-right: 5px;
 }
 
@@ -142,11 +142,12 @@ body { /* 页面主体 */
   left: 0;
 }
 
-.post-content p { /* 文章内容段落 */
+.post-content p { /* 文章段落 */
   margin-bottom: 15px;
 }
 
 .read-more { /* 阅读更多 */
+  user-select: none;
   display: inline-block;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.2);
