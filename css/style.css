@@ -12,7 +12,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body { /* 页面主体 */
+body {
   background-image: url('../assets/pic/Background.jpg');
   background-size: cover;
   background-position: center;
@@ -217,5 +217,9 @@ footer { /* 页脚 */
   .github-contributions-svg {
       width: 100%;
       height: auto;
+  }
+
+  .sidebar {
+    left: 0px;
   }
 }
