@@ -73,11 +73,14 @@ function setLoadingState(isLoading) {
   const stats = document.querySelectorAll('.stat-number');
 
   stats.forEach(stat => {
-      if (isLoading) {
+      if (isLoading) { // 显示加载中
           stat.classList.add('loading');
-      } else {
+          document.body.classList.add('no-scroll'); // 禁止滚动
+      }
+      else { // 隐藏加载中
           stat.classList.remove('loading');
           stat.classList.remove('error');
+          document.body.classList.remove('no-scroll'); // 可以滚动
       }
   });
 }

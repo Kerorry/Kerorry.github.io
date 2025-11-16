@@ -23,6 +23,11 @@ body {
   padding: 20px;
 }
 
+.no-scroll { /* 禁止页面滚动 */
+  overflow: hidden;
+  height: 100%;
+}
+
 .container { /* 内容容器 */
   display: flex;
   max-width: calc(100% - 40px);
